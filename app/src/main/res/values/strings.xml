@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="intro_title">Da un paso a los perfumes\n <font color="#6033ba"> desde tu casa</font></string>
+    <string name="intro_text">Busca entre las mejores marcas de perfumeria\nDisfruta rapido, con envio gratuito</string>
+    <string name="intro_signin">Ya tienes una cuenta ? <font color="#6033ba"> inicia sesion</font></string>
+
+
+</resources>

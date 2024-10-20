@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "36270210866",
+    "project_id": "perfumapp1",
+    "storage_bucket": "perfumapp1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36270210866:android:4fecf0708fff0896a7612b",
+        "android_client_info": {
+          "package_name": "com.augusto.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR53HfCq2GM9TkZIiWn1ur6n6-pr0vVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36270210866:android:c78af6f00552dff8a7612b",
+        "android_client_info": {
+          "package_name": "com.augusto.perfumapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR53HfCq2GM9TkZIiWn1ur6n6-pr0vVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36270210866:android:bca53fa359e24128a7612b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR53HfCq2GM9TkZIiWn1ur6n6-pr0vVZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
