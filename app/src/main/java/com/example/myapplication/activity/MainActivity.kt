@@ -2,19 +2,14 @@ package com.example.myapplication.activity
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
-import com.example.myapplication.R
-import com.example.myapplication.SliderAdapter
+import com.example.myapplication.Adapter.BrandAdapter
+import com.example.myapplication.Adapter.SliderAdapter
 import com.example.myapplication.ViewModel.MainViewModel
-import com.example.myapplication.databinding.ActivityIntroBinding
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.model.SliderModel
 
@@ -27,6 +22,7 @@ class MainActivity : BaseActivity() {
         setContentView(binding.root)
 
         initBanner()
+        initBrand()
 
     }
 
@@ -39,7 +35,7 @@ class MainActivity : BaseActivity() {
         viewModel.loadBanners()
     }
     private fun banners(images:List<SliderModel>){
-        binding.viewpagerSlider.adapter=SliderAdapter(images,binding.viewpagerSlider)
+        binding.viewpagerSlider.adapter= SliderAdapter(images,binding.viewpagerSlider)
         binding.viewpagerSlider.clipToPadding=false
         binding.viewpagerSlider.clipChildren=false
         binding.viewpagerSlider.offscreenPageLimit=3
@@ -54,4 +50,16 @@ class MainActivity : BaseActivity() {
             binding.dotIndicator.attachTo(binding.viewpagerSlider)
         }
     }
+
+    private fun initBrand(){
+        binding.progressBarBrand.visibility=View.VISIBLE
+        viewModel.brands.observe(this, Observer{
+            binding.viewBrand.layoutManager=LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
+            binding.viewBrand.adapter=BrandAdapter(it)
+            binding.progressBarBrand.visibility=View.GONE
+
+        })
+        viewModel.loadBrand()
+    }
+
 }
