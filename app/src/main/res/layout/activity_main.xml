@@ -263,6 +263,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/cartBtn"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
@@ -281,7 +282,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Explorar"
+                    android:text="Carro"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="10sp" />
@@ -306,7 +307,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Explorar"
+                    android:text="Favoritos"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="10sp" />
@@ -331,7 +332,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Explorar"
+                    android:text="Mis pedidos"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="10sp" />
@@ -356,7 +357,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Explorar"
+                    android:text="Perfil"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="10sp" />
