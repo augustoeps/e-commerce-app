@@ -62,7 +62,8 @@ class CartActivity : BaseActivity() {
 
         }
     }
-    //variable de seteo mas funcionamiento basico del finish //agregamos agit
+    //variable de seteo mas funcionamiento basico del finish
+    //prueba dos si funciona el branch
     private fun setVariable() {
         binding.backBtn.setOnClickListener{finish()}
     }
