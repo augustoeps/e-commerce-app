@@ -62,6 +62,7 @@ class CartActivity : BaseActivity() {
 
         }
     }
+    //variable de seteo mas funcionamiento basico del finish
     private fun setVariable() {
         binding.backBtn.setOnClickListener{finish()}
     }
