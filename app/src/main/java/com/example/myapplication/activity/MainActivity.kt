@@ -3,6 +3,7 @@ package com.example.myapplication.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -12,6 +13,7 @@ import androidx.viewpager2.widget.MarginPageTransformer
 import com.example.myapplication.Adapter.BrandAdapter
 import com.example.myapplication.Adapter.PopularAdapter
 import com.example.myapplication.Adapter.SliderAdapter
+import com.example.myapplication.R
 import com.example.myapplication.ViewModel.MainViewModel
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.model.SliderModel
@@ -28,6 +30,7 @@ class MainActivity : BaseActivity() {
         initBrand()
         initPopular()
         initBottomMenu()
+        profile()
 
     }
 
@@ -80,6 +83,19 @@ class MainActivity : BaseActivity() {
 
         })
         viewModel.loadPupolar()
+    }
+
+    private fun profile(){
+        val profileImagee: ImageView = findViewById(R.id.imageView2)
+
+        profileImagee.setOnClickListener{
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
+
     }
 
 }

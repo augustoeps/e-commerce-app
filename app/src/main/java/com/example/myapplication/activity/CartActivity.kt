@@ -1,5 +1,6 @@
 package com.example.myapplication.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -66,5 +67,15 @@ class CartActivity : BaseActivity() {
     //prueba dos si funciona el branch
     private fun setVariable() {
         binding.backBtn.setOnClickListener{finish()}
+
+        binding.button.setOnClickListener{
+            val intent = Intent(this, PurchaseActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
+
+
+
 }
